@@ -7,23 +7,24 @@
 
 body {
     background: #f4f4f4;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 700px;
     margin: auto;
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #d63384;
+    font-size: 30px;
 }
 
 label {
@@ -36,21 +37,19 @@ label {
 input,
 textarea,
 select {
-
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-
+    font-size: 16px;
 }
 
 textarea {
     height: 100px;
-    resize: none;
+    resize: vertical;
 }
 
 button {
-
     width: 100%;
     padding: 14px;
     margin-top: 20px;
@@ -60,7 +59,6 @@ button {
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-
 }
 
 button:hover {
@@ -68,7 +66,6 @@ button:hover {
 }
 
 .btn {
-
     display: block;
     text-align: center;
     margin-top: 20px;
@@ -77,45 +74,84 @@ button:hover {
     color: white;
     text-decoration: none;
     border-radius: 6px;
-
 }
 
 .btn:hover {
     background: #084298;
 }
 
-table {
-
+/* Agar tabel bisa discroll di HP */
+.table-responsive {
     width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
     border-collapse: collapse;
     margin-top: 20px;
-
 }
 
 table th {
-
     background: #d63384;
     color: white;
     padding: 12px;
-
 }
 
 table td {
-
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
-
 }
 
-@media(max-width:600px) {
+.table-responsive{
+    width:100%;
+    overflow-x:auto;
+}
 
-    .container {
-        width: 100%;
+table{
+    width:100%;
+    min-width:600px;
+    border-collapse:collapse;
+}
+
+@media (max-width:600px){
+
+    body{
+        padding:15px;
     }
 
-    table {
-        font-size: 12px;
+    .container{
+        padding:15px;
     }
 
+    h1{
+        font-size:22px;
+    }
+
+    label{
+        font-size:14px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size:14px;
+        padding:10px;
+    }
+
+    button,
+    .btn{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .table-responsive{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:550px;
+    }
 }
