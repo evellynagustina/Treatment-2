@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Salon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Booking Salon Kecantikan</h1>
+
+        <form id="bookingForm">
+
+            <label>Nama Pelanggan</label>
+            <input type="text" id="nama" required>
+
+            <label>Nomor HP</label>
+            <input type="tel" id="hp" required>
+
+            <label>Jenis Perawatan</label>
+
+            <select id="layanan">
+                <option>Hair Spa</option>
+                <option>Hair Coloring</option>
+                <option>Creambath</option>
+                <option>Facial</option>
+                <option>Manicure</option>
+                <option>Pedicure</option>
+            </select>
+
+            <label>Catatan</label>
+
+            <textarea id="catatan"></textarea>
+
+            <button type="submit">
+                Simpan Booking
+            </button>
+
+        </form>
+
+        <a href="data.html" class="btn">
+            Lihat Data Booking
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
